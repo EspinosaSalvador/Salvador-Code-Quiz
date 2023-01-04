@@ -39,7 +39,7 @@ you should be able to see this,
 
 Click on code as shown in the image
 
-![Click on Code](./assets/Img/Code-screenshot.png)
+![Click on Code](./assets/img/Code-Screenshot.png)
 
 Copy the SSH key or the HTTPS key and open.
 
