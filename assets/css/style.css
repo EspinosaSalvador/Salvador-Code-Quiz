@@ -8,20 +8,30 @@
     --correctAnswer: rgb(57, 238, 57);
     --wrongAnswer: rgb(198, 85, 85);
 }
-
+/* ? Body section */
 body {
-    color: var(--blueColor);
-    /* background-color: var(--noAnswer); */
-
-    background-color: var();
+    color: var(--whiteColor);
+    background-color: var(--noAnswer);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
     align-items: center;
     width: 100vw;
-    height: 40rem;
+    height: 80rem;
+    font-size: xx-large;
+    font-weight: 700;
 }
+
+h1 {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    line-height: 15rem;
+    height: 15rem;
+    font-weight: 700;
+}
+/* * Added colors that will help the user know if the answer was correct or wrong with the colors in the background */
 
 body.noAnswer {
     background-color: var(--noAnswer);
@@ -33,6 +43,56 @@ body.wrongAnswer {
     background-color: var(--wrongAnswer);
 }
 
-h1 {
-    font-size: 4rem;
+/* ? Container area */
+
+.container {
+    width: 70rem;
+    max-width: 80%;
+    background-color: rgb(153, 187, 249);
+    padding: 1rem;
+    
 }
+
+.btn {
+    cursor: pointer;
+    font-size: 3rem;
+    margin: .5rem;
+    font-weight: 300;
+}
+
+.btn:hover{
+    background-color: rgb(241, 241, 215);
+    transform: scale(1.2);
+}
+
+.btnGrid {
+    display: grid;
+    grid-template-columns: repeat(auto);
+    margin: 3rem, 3rem;
+}
+
+.btn.correct {
+    background-color: var(--correctAnswer);
+}
+.btn.wrong {
+    background-color: var(--wrongAnswer);
+}
+
+.startBtn, .nextBtn {
+padding: 1.5rem;
+font-size: larger;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+
+.controls {
+    display: flex;
+}
+
+/* .nextBtn {
+padding: 1.5rem;
+display: flex;
+align-items: center
+} */
