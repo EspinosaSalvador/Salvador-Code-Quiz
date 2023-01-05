@@ -91,8 +91,6 @@ margin: auto;
     display: flex;
 }
 
-/* .nextBtn {
-padding: 1.5rem;
-display: flex;
-align-items: center
-} */
+.hidden {
+    display: none;
+}
