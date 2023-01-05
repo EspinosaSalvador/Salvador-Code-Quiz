@@ -3,8 +3,36 @@
     font-size: 62.5%;
     /* * 1 REM = 10px */
     font-family: 'Roboto', sans-serif;
+    --whiteColor: white;
+    --noAnswer: rgb(68, 68, 228);
+    --correctAnswer: rgb(57, 238, 57);
+    --wrongAnswer: rgb(198, 85, 85);
+}
+
+body {
+    color: var(--blueColor);
+    /* background-color: var(--noAnswer); */
+
+    background-color: var();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100vw;
+    height: 40rem;
+}
+
+body.noAnswer {
+    background-color: var(--noAnswer);
+}
+body.correctAnswer {
+    background-color: var(--correctAnswer);
+}
+body.wrongAnswer {
+    background-color: var(--wrongAnswer);
 }
 
 h1 {
-    font-size: xx-large;
+    font-size: 4rem;
 }
